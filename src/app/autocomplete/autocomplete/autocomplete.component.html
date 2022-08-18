@@ -1,0 +1,17 @@
+<form class="cities-form">
+    <mat-form-field appearance="fill">
+        <mat-label>Gradovi</mat-label>
+        <input 
+        type="text"
+        placeholder="Izaberi"
+        aria-label="Izaberi grad"
+        matInput
+        [formControl]="searchTerm"
+        [matAutocomplete]="auto"/>
+
+        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+            <mat-option *ngFor="let city of filteredCities | async"
+            [value]="city"> {{city}}</mat-option>
+        </mat-autocomplete>
+    </mat-form-field>
+</form>
