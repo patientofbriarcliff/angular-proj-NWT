@@ -29,5 +29,4 @@ export class AutocompleteComponent implements OnInit {
     const filterValue = value.toLowerCase();
     return this.cities.filter(city => city.toLowerCase().includes(filterValue));
   }
-
 }

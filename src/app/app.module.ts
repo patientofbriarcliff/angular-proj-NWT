@@ -1,6 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 //Material Components
 import { MatAutocompleteModule} from '@angular/material/autocomplete';
@@ -19,7 +20,7 @@ import { AutocompleteComponent } from './autocomplete/autocomplete/autocomplete.
   declarations: [
     AppComponent,
     MapComponent,
-    AutocompleteComponent
+    AutocompleteComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +31,8 @@ import { AutocompleteComponent } from './autocomplete/autocomplete/autocomplete.
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
   ],
   providers: [
     DataService
